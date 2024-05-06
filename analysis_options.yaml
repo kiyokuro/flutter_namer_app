@@ -1,0 +1,24 @@
+# このファイルは、Dartコードを静的に分析してエラーや警告、リントをチェックするためのアナライザを設定します。
+#
+# アナライザによって特定された問題は、Dart対応のIDEのUI（https://dart.dev/tools#ides-and-editors）に表示されます。
+# アナライザは、`flutter analyze`を実行することでコマンドラインからも呼び出すことができます。
+
+# 以下の行は、Flutterアプリ、パッケージ、およびプラグインに対して推奨されるリントを有効にします。
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # このプロジェクトに適用されるリントルールは、以下のセクションでカスタマイズすることができます。
+  # 上記でインクルードした`package:flutter_lints/flutter.yaml`からルールを無効にしたり、追加のルールを有効にしたりすることができます。
+  # 利用可能なすべてのリントとそのドキュメントについては、https://dart.dev/lints で公開されています。
+  #
+  # プロジェクト全体でリントルールを無効にする代わりに、コードの単一行または特定のDartファイルでリントを抑制することもできます。
+  # リントを抑制するには、行またはファイル内で`// ignore: name_of_lint`および`// ignore_for_file: name_of_lint`の構文を使用します。
+  rules:
+    avoid_print: false  # `avoid_print`ルールを無効にするにはコメント解除してください
+    # prefer_single_quotes: true  # `prefer_single_quotes`ルールを有効にするにはコメント解除してください
+    prefer_const_constructors: false  # `prefer_const_constructors`ルールを有効にするにはコメント解除してください
+    prefer_final_fields: false  # `prefer_final_fields`ルールを有効にするにはコメント解除してください
+    use_key_in_widget_constructors: false  # `use_key_in_widget_constructors`ルールを有効にするにはコメント解除してください
+    prefer_const_literals_to_create_immutables: false  # `prefer_const_literals_to_create_immutables`ルールを有効にするにはコメント解除してください
+
+# このファイルの追加情報については、https://dart.dev/guides/language/analysis-options を参照してください
